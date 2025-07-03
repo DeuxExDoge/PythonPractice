@@ -1,3 +1,4 @@
+# 0.1 funcionalida de print()
 # Print funciona como una función para mostrar mensajes en la consola
 # Puedes usar comillas simples o dobles para definir cadenas de texto
 print("Hello world")
