@@ -24,6 +24,7 @@ booleano = False
 print('booleano:', booleano, '->', type(booleano))
 print('booleano:', 'True es', type(True), '->', 'False es', type(False), '->', 'bool(1) es', type(bool(1)), '->', 'bool(0) es', type(bool(0)), '->', '1<2 es', type(1 < 2), '->', '1>2 es', type(1 > 2), '->', '1==1 es', type(1 == 1), '->', '1!=2 es', type(1 != 2))
 # True y False son valores booleanos, 1 se interpreta como True y 0 como False.
+# Esto da error type(bool = -1) TypeError: type() takes 1 or 3 arguments
 
 # Lista
 lista = [1, 2, 3, 4]

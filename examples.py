@@ -26,4 +26,10 @@
 # CTRL + K + CTRL + U. esto descomenta el código seleccionado
 # alt + shift + a. esto comenta el código seleccionado con comillas triples, es útil para comentar varias líneas de código a la vez.
 # alr + shift + a. esto descomenta el código seleccionado con comillas triples
+#Prueba quiero saber si 5/9 es mayor o menor que 5/10
+# if 5 / 9 > 5 / 10:
+#     print("5/9 es mayor que 5/10")
+# else:
+#     print("5/9 es menor o igual que 5/10")
+# Comversión de celcius a fahrenheit
 
