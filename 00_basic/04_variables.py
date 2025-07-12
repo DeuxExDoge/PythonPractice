@@ -16,7 +16,7 @@ print(age)  # Imprime el nuevo valor de la variable age, que ahora es 27
 # Tipado dinámico : El tipo de dato se determian en tiempo de ejecución, no tienes que declarlo explícitamente.
 # Tipado fuerte: No puede realizar conversiones automáticas entre tipos de datos, debes hacerlo explícitamente.
 
-name = "pedo"
+name = "Pedro"
 print(type(name))  # Imprime el tipo de dato de la variable name, que es una cadena (str)
 
 name = 27

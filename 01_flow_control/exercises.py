@@ -69,3 +69,5 @@ elif edad <= 64:
     print("Adulto")
 elif edad >= 65:
     print("Adulto mayor")
+else:
+    print("Edad no valida.")

@@ -33,3 +33,5 @@
 #     print("5/9 es menor o igual que 5/10")
 # Comversión de celcius a fahrenheit
 
+# list = [1,2,3,4,5,6,7,8,9]
+# print(list[-5:]) # Prueba de funcionamiento de lista

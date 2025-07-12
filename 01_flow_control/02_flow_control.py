@@ -20,7 +20,7 @@ print("5 >= 5:", 5 >= 5)  # True (mayor o igual)
 print("5 <= 3:", 5 <= 3)  # False (menor o igual)
 
 
-print("Comparación de cadenas:")
+print("\nComparación de cadenas:")
 print("manzana < pera:", "manzana" < "pera")  # True (comparación lexicográfica)
 print("manzana == Manzana:", "manzana" == "Manzana")  # False (diferencia de mayúsculas y minúsculas
 
