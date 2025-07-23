@@ -1,9 +1,8 @@
 # 01 - sentencias condicionales (if, else, elif)
 # Permite ejecutar bloques de código solo si se cumnplen ciertas condiciones.
 
-import os # Libreria de modulos de sistema operativo, nos permite limpiar la consola.
-
-os.system("cls")  # Limpia la consola en sistemas Unix/Linux. En Windows, usar "cls".
+from os import system
+if system("clear") != 0: system("cls")
 
 
 print("Sentencia simple condicional (if) y (else):")

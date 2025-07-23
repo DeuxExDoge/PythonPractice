@@ -3,9 +3,8 @@
 # Fundamentos para el cotnrol de flujo y la lógica en programación.
 
 # Los booleanos representan dos estados: verdadero (True) y falso (False).
-import os # Libreria de modulos de sistema operativo, nos permite limpiar la consola.
-
-os.system("cls")  # Limpia la consola en sistemas Unix/Linux. En Windows, usar "cls".
+from os import system
+if system("clear") != 0: system("cls")
 
 print("\nValores booleanos básicos:")
 verdadero = True

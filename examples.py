@@ -35,3 +35,34 @@
 
 # list = [1,2,3,4,5,6,7,8,9]
 # print(list[-5:]) # Prueba de funcionamiento de lista
+
+# list =[1,2,3,5]
+# print(list[-1::-1])
+
+# lista = [1,2,3]
+# var = lista[0] + lista[1]
+# print(var)
+# Prueba para ver si puedo sumar las partes de una lista a una variable, para por ejemplo sacar un promedio
+
+# Lista usada como rango, que pasa si tiene un cambio dentro del for
+# lista = [1,2,3]
+# for i in lista:
+#     lista[i] += lista
+# print(lista)
+# Error de memoria
+# Cambiar el tamaño adentro afecta al rango del for y puede generar un loop infito.
+# lista = [1,2,3]
+# for i in lista:
+#     lista.append(i+1)
+#     print(i)
+# print(lista)
+
+# Generar una lista con un rango de 20. 1 al 20.
+# lista = []
+# for i in range(20):
+#     lista.append(i+1)
+#     print(i)
+# print(lista)
+
+string = "hola"
+print(string[0])

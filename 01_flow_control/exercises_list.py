@@ -1,6 +1,8 @@
 ###
 # EJERCICIOS
 ###
+from os import system
+if system("clear") != 0: system("cls")
 
 # Ejercicio 1: El mensaje secreto
 # Dada la siguiente lista:
@@ -40,8 +42,9 @@ print(sandwich)
 lista = [1, 2, 3]
 # Crea una nueva lista que contenga los elementos de la lista original duplicados.
 # Ejemplo: [1, 2, 3] -> [1, 2, 3, 1, 2, 3]
-lista += lista
-print(lista)
+#lista += lista
+lista_doble= lista * 2
+print(lista_doble)
 
 # Ejercicio 5: Extrayendo el centro
 # Dada una lista con un número impar de elementos, extrae el elemento que se encuentra en el centro de la lista utilizando slicing.
@@ -49,8 +52,20 @@ lista = [10, 20, 30, 40, 50] # -> El centro es 30
 # lista[int(len(lista)/2)] = None # Duda que me surgio, se como sumar/concatenar, pero donde esta la sustracción o la resta en las listas siempre agrego nunca saco datos.Resultado : [10, 20, None, 40, 50]
 lista = lista[:int(len(lista)/2)] + lista[int(-len(lista)/2):] # Encontramos en la lista impar el elemento del medio de la lista usando slicing y no lo incluimos en la última iteración de la lista.
 print(lista)
-#lista2 = lista[::-1]  and lista[:] Esto funciona raro me copia el segundo con el and y el primero con el or, no se igual que intento usando estos comparadores para booleanos con lsitas
+#lista2 = lista[::-1]  and lista[:] Esto funciona raro me copia el segundo con el and y el primero con el or, no se igual que intento usando estos comparadores para booleanos con listas
+lista = [10, 20, 30, 40, 50]
+centro = len(lista) // 2
+print(lista[centro]) # Extraemos el número del centro en este caso el 30.
 
 # Ejercicio 6: Reversa parcial
 # Dada una lista, invierte solo la primera mitad de la lista (utilizando slicing y concatenación).
 # Ejemplo: lista = [1, 2, 3, 4, 5, 6] -> Resultado: [3, 2, 1, 4, 5, 6]
+#print(list[desde:hasta:paso])
+lista = [1,2,3,4,5,6]
+# lista[:3] = [3,2,1]
+# lista2 = [] 
+# lista2= lista[-1::-1]
+# lista = lista2[3:] + lista[3:]
+# lista = lista[-4::-1] + lista[3:]
+lista = lista[int(len(lista)//2)-1::-1] + lista[int(len(lista)//2):] # Agregamos el -1 para que no cuente al 4 en la tercera posición. Esto pasa porque empezamos a contar desde el 0.
+print(lista)

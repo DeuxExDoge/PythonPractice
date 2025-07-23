@@ -1,9 +1,8 @@
 # 03 - Listas
 # Secuencias mutables de elementos.
 # Pueden contener elementos de diferentes tipos.
-import os # Libreria de modulos de sistema operativo, nos permite limpiar la consola.
-
-os.system("cls")  # Limpia la consola en sistemas Unix/Linux. En Windows, usar "cls".
+from os import system
+if system("clear") != 0: system("cls")
 
 # Creación de listas
 print("\nCrear listas")
