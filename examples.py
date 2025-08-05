@@ -14,7 +14,7 @@
 #Nos muestra: Hola 5 True
 # Imprime diferentes tipos de datos en una sola línea
 
-#print("Hola", "mundo", sep=" - ", end="!!!\n", file=open("salida.txt", "w"))
+#print("Hola", "mundo", sep=" - ", end="!!!\n", file=open("salida.txt", "w")) # La "w" indica que se abrirá el archivo en modo escritura, si no existe lo crea y si existe lo sobreescribe. Sin la "w" no se crearía el archivo.
 # Escribe "Hola mundo!!!" en un archivo llamado "salida.txt" con un separador personalizado y un final específico
 # Este "tooltip" te muestra exactamente cómo puedes personalizar la función print() sin necesidad de buscar documentación externa.
 
@@ -64,5 +64,24 @@
 #     print(i)
 # print(lista)
 
-string = "hola"
-print(string[0])
+# Generar una lista con un rango de x. 1 al 20.
+# lista = []
+# for i in range(1,21):
+#     lista.append(i)
+#     print(i)
+# print(lista)
+
+# Una forma de generar una lista con un rango de 20, del 1 al 20 más facil.
+# lista = list(range(1, 21))
+# print(lista)
+# string = "hola"
+# Que triste que descrubri esto de generar listas con range tan facilmente después de generar con mi estrategía de for y append.
+
+# print(string[0])
+
+# lista = list((i for i in range(1, 21)))
+# print(lista)
+
+# Tabla del 11
+# for i in range(1, 11):
+#     print(f"11 x {i} = {11 * i}")

@@ -21,7 +21,7 @@ media = 0
 for i in range(len(numeros)):
     media += numeros[i]
     print(i)
-print(f"La media es {media/len(numeros)}")
+print(f"La media es {media/len(numeros)}, media es : {type(media)}")
 print(f"El rango de una lista es: {range(len(numeros))}")
 
 # Ejercicio 3: Buscar el máximo de una lista
@@ -34,6 +34,12 @@ for i in range(len(numeros)):
     if numeros[i] > mayor:
         mayor = numeros[i]
 print(mayor)
+# Otra forma
+mayor = max(numeros) # Usando la función max.
+print(f"El número máximo de la lista es: {mayor}")
+# Otra forma
+mayor = sorted(numeros)[-1] # Usando la función sorted y accediendo al último elemento.
+print(f"El número mayor es el: {mayor}")
 
 # Ejercicio 4: Filtrar cadenas por longitud
 # Dada la siguiente lista de palabras:
@@ -46,6 +52,9 @@ for i in range(len(palabras)):
     if len(palabras[i]) >= 5:
         cinco_letras.append(palabras[i])
 print(f"Las palabras con 5 caracteres son: {cinco_letras}")
+# Otra forma
+cinco_letras = [x for x in palabras if len(x) >= 5] # Es una forma ingeniosa, compacta de resolver el ejercicio. List comprehension.
+print(f"Las palabras con 5 caracteres son: {cinco_letras}")
 
 # Ejercicio 5: Contar palabras que empiezan con una letra
 # Dada la siguiente lista de palabras:
@@ -53,7 +62,7 @@ palabras = ["casa", "arbol", "sol", "elefante", "luna", "coche"]
 # Pide al usuario que introduzca una letra.
 # Cuenta cuántas palabras en la lista empiezan con esa letra (sin diferenciar mayúsculas/minúsculas).
 print("\nEjercicio 5:")
-letra = input("Escribi una letra ")
+letra = input("Escribi una letra ").lower()
 var = 0
 palabras.sort(key=str.lower)
 # for i in range(len(palabras)):
@@ -66,3 +75,4 @@ for i in range(len(palabras)):
     if letra == (palabras[i])[0]:
         var += 1
 print(f"La letra '{letra}' aparece como primera letra en {var} palabra(s) de nuestra lista.")
+
